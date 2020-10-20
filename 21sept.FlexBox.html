@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <title>FlexBox</title>
+    <Style>
+        .flex-container {
+            display: flex;
+            background-color: lightgreen;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            /*flex-wrap: wrap;  ei tööta väheste elementidega*/
+
+        }
+
+        .flex-container>div,
+        .circle {
+            background-color: orchid;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            /*horisontaalselt keskele*/
+            line-height: 100px;
+            /*rea vahe paneb teksti keskele*/
+            border-radius: 10%;
+            font-size: 1.5vw;
+
+        }
+
+        .circle {
+            border-radius: 50%;
+            border: 1px black solid;
+        }
+
+        h1 {
+            font-size: 5vw;
+        }
+    </Style>
+</head>
+
+<body>
+    <h1>Kasutame flexi mudelit</h1>
+    <div class="flex-container">
+        <div>Esimene</div>
+        <span class="circle">teine</span>
+        <div>Kolmas</div>
+        <span class="circle">neljas</span>
+        <div>viies</div>
+
+
+    </div>
+
+</body>
+
+</html>

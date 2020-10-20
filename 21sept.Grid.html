@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                'menu main main main right right'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            ;
+            grid-gap: 5px;
+            background-color: cadetblue;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .grid-container {
+                grid-template-areas: 'header header'
+                    'menu main'
+                    'menu right'
+                    'footer footer';
+                background-color: goldenrod;
+                padding: 10px;
+            }
+            .item5{
+                content: url(Mobla1.png);
+            }
+        }
+
+        .grid-container>div {
+            background-color: deeppink;
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </Style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+
+    <h1>Grid System</h1>
+    <p>Lehekülg millel on 6 tulpa ja 3 rida</p>
+    <div class="grid-container">
+        <div class="item1">HEADER</div>
+        <div class="item2">MENU</div>
+        <div class="item3">MAIN</div>
+        <div class="item4">RIGHT</div>
+        <div class="item5">FOOTER</div>
+    </div>
+
+    <br>
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+<div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Fluid jumbotron</h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+
+</body>
+
+</html>
