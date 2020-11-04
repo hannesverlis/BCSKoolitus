@@ -1,0 +1,29 @@
+body{
+    background-color: beige;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: content-box;
+    padding: 20px;
+}
+.container{ 
+padding: 20px;
+border-radius: 11px;}
+
+.col-20{
+border-radius: 7px;
+margin: 3px;
+}
+.col-80{ 
+    border-radius: 11px;
+}
+input{
+    padding: 15px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 13px;
+}
+label{
+line-height: 33px;
+}
+
+.row{ 
+    text-decoration: underline;
+}
